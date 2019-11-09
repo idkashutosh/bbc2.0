@@ -26,7 +26,7 @@ router.get("/:id",function(req,res){
         else{
             console.log(foundsong);
              //Render show template of the id
-             res.render("campgrounds/show", {song : foundsong});
+             res.render("songs/show", {song : foundsong});
         }
     });
 });

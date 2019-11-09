@@ -12,4 +12,4 @@ var songSchema = new mongoose.Schema({
        } 
     ]
 });
-module.exports = mongoose.model("Song",campgroundSchema);
+module.exports = mongoose.model("Song",songSchema);

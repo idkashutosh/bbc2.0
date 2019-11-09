@@ -8,8 +8,8 @@ var express    = require("express"),
     methodoverride = require("method-override");
     song = require("./models/song"),
     comment    = require("./models/comment"),
-    user       = require("./models/user"),
-    seedDB     = require("./seeds");
+    user       = require("./models/user");
+    // seedDB     = require("./seeds");
 //requiring routes
 var commentroutes    = require("./routes/comments"),
     songroutes = require("./routes/songs"),
@@ -45,7 +45,7 @@ var commentroutes    = require("./routes/comments"),
     
     app.use(indexroutes);
     app.use("/songs/:id/comments",commentroutes);
-    app.use("/songs", songsroutes);
+    app.use("/songs", songroutes);
     
     app.listen(3000,function(){
         console.log("AI SONGS app server has started");
