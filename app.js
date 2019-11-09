@@ -12,7 +12,7 @@ var express    = require("express"),
     seedDB     = require("./seeds");
 //requiring routes
 var commentroutes    = require("./routes/comments"),
-    songroutes = require("./routes/campgrounds"),
+    songroutes = require("./routes/songs"),
     indexroutes       = require("./routes/index");    
 
     mongoose.connect("mongodb://localhost/aisongs");    
