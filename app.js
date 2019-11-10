@@ -4,12 +4,13 @@ var express    = require("express"),
     mongoose   = require("mongoose"),
     flash      = require("connect-flash");
     passport   = require("passport"),
+    moment     = require("moment"),
     localstrategy = require("passport-local"),
     methodoverride = require("method-override");
     song = require("./models/song"),
     comment    = require("./models/comment"),
     user       = require("./models/user");
-    // seedDB     = require("./seeds");
+    seedDB     = require("./seeds");
 //requiring routes
 var commentroutes    = require("./routes/comments"),
     songroutes = require("./routes/songs"),
@@ -21,8 +22,8 @@ var commentroutes    = require("./routes/comments"),
     app.use(flash());
     app.set("view engine", "ejs");
     app.use(bodyparser.urlencoded({extended:true}));
-    //seed database // seedDB();
-    app.locals.moment = require("moment");
+    seedDB(); // seed database // 
+    // app.locals.moment = require("moment");
     //Passport config
     app.use(require("express-session")({
        secret: "now you see me",
