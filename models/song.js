@@ -3,6 +3,7 @@ var mongoose=require("mongoose");
 var songSchema = new mongoose.Schema({
     song:String,
     price:String,
+    url:String,
     cover_image:String,
     artists:String,
     comments:[

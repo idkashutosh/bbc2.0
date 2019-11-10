@@ -38,13 +38,14 @@ transform: scale(1.05);
 
 audio
 {
-width: 1080px;
+width: 1100px;
+background:#202020;
 -webkit-transition:all 0.5s linear;
 -moz-transition:all 0.5s linear;
 -o-transition:all 0.5s linear;
 transition:all 0.5s linear;
--moz-box-shadow: 2px 2px 4px 0px #006773;
--webkit-box-shadow:  2px 2px 4px 0px #006773;
+-moz-box-shadow: 2px 2px 4px 0px #993000;
+-webkit-box-shadow:  2px 2px 4px 0px #993000;
 box-shadow: 2px 2px 4px 0px #993000;
 -moz-border-radius:7px 7px 7px 7px ;
 -webkit-border-radius:7px 7px 7px 7px ;
