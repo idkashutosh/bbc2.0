@@ -17,6 +17,7 @@
                     <h4><a><%= song.song %></a></h4>
                     <p>
                         <em>Sung By <%= song.artists %></em>
+                        <audio controls><source src='<%= song.url %>'></audio>
                     </p>
                 </div>
             </div>
