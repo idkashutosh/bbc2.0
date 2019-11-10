@@ -24,7 +24,6 @@ router.get("/register", function(req,res){
            username: req.body.username,
            firstname: req.body.firstname,
            lastname:req.body.lastname,
-           avatar: req.body.avatar,
            email:req.body.email
           });
      user.register(newuser, req.body.password, function(err, user){
