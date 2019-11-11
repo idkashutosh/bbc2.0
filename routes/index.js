@@ -32,7 +32,7 @@ router.get("/register", function(req,res){
           return res.render("register", {error: err.message});
       } 
        passport.authenticate("local")(req, res,function(){
-             req.flash("success","Welcome to AI MUSIC"+ user.username);
+             req.flash("success","Welcome to AI MUSIC "+ user.username);
              res.redirect("/songs");
        });
      });

@@ -11,18 +11,19 @@ var data = [
            price:"75"
         },
         {  
+         song:"Tajdar e haram",
+         url:"http://hck.re/wxlUcX",
+         artists:"Atif Aslam",
+         price:"80",
+         cover_image:"http://hck.re/5dh4D5"
+        },
+        {  
+
            song:"Aik Alif",
            url:"http://hck.re/ZeSJFd",
            artists:"Saieen Zahoor, Noori",
            price:"100",
            cover_image:"http://hck.re/3Cm0IX"
-        },
-        {  
-           song:"Tajdar e haram",
-           url:"http://hck.re/wxlUcX",
-           artists:"Atif Aslam",
-           price:"80",
-           cover_image:"http://hck.re/5dh4D5"
         },
         {  
            song:"Aaj Rung",
