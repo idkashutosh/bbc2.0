@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="../css/mediaelementplayer.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="../css/fl-bigmug-line.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/css/mediaelementplayer.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/css/fl-bigmug-line.css">
     
-    <link rel="stylesheet" href="../stylesheets/main.css">
-    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/css/aos.css">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
   </head>
   <body>
@@ -35,7 +35,7 @@
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="/" class="text-white h2 mb-0"><img src="../photos/aimusiclogo.png" width="20%" height="15%"><strong>AI<span class="text-primary">MUSIC</span></strong></a></h1>
+              <h1 class="mb-0"><a href="/" class="text-white h2 mb-0"><img src="/photos/aimusiclogo.png" width="20%" height="15%"><strong>AI<span class="text-primary">MUSIC</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -80,21 +80,40 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-
-
-
-    <div class="site-blocks-cover overlay" style="background-image: url('<%= song.cover_image %>');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url('/images/pay1.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-              <h1 class="mb-4"><strong>Let's ROCK <br> <%= song.song %><br><br><h5><%= song.artists %><br><br><audio controls autoplay preload="none"><source src='<%= song.url %>'></audio></h5></strong></h1>
-              <h4 class="pull-right" style="color: white;">Buy at just : $<%= song.price %> <br><hr><a href="/songs/<%=song._id %>/payments/new"class="btn btn-lg btn-primary">Buy</a></h4>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1 class="mb-4">It's to pay the Tribute</h1>
+              <h2 class="mb-4" style="color:white"><%=song.song%> - $ <%=song.price %></h2>
+              <div class="row">
+              <div style="width: 50%; margin:25px auto">
+                  <form action="new" method="POST">
+                      <div class="form-group">
+                          <input class="form-control"type="text" name="name" placeholder="Name on the card" required>
+                      </div>
+                      <div class="form-group">
+                          <input  class="form-control"type="text" name="cardno" placeholder="Card Number"required>
+                      </div>
+                      <div class="form-group">
+                          <input  class="form-control"type="text" name="year" placeholder="Year of expiry"required>
+                      </div>
+                      <div class="form-group">
+                          <input  class="form-control"type="email" name="cvv" placeholder="CVV"required>
+                      </div>
+                      <div class="form-group">
+                          <button class="btn btn-lg btn-primary btn-block">Proceed to PAY</button>
+                      </div>
+                  </form>
+                  <a href="/songs">Go Back</a>
+              </div>
+          </div>         -->
             </div>
           </div>
         </div>
       </div>
-    <br>
-    </div> 
-
-
-<% include ../partials/footer %>
+    </div>

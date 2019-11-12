@@ -8,11 +8,11 @@ var express    = require("express"),
     localstrategy = require("passport-local"),
     methodoverride = require("method-override");
     song = require("./models/song"),
-    comment    = require("./models/comment"),
+    payment    = require("./models/payment"),
     user       = require("./models/user");
     seedDB     = require("./seeds");
 //requiring routes
-var commentroutes    = require("./routes/comments"),
+var paymentroutes    = require("./routes/payments"),
     songroutes = require("./routes/songs"),
     indexroutes       = require("./routes/index");    
 
@@ -45,7 +45,7 @@ var commentroutes    = require("./routes/comments"),
     });
     
     app.use(indexroutes);
-    app.use("/songs/:id/comments",commentroutes);
+    app.use("/songs/:id/payments",paymentroutes);
     app.use("/songs", songroutes);
     
     app.listen(3000,function(){

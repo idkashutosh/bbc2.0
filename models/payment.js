@@ -1,9 +1,11 @@
 var mongoose = require("mongoose");
 
 
-var commentschema= new mongoose.Schema({
-        text : String,
-        createdat: {type:Date, default:Date.now },
+var paymentschema= new mongoose.Schema({
+        cardno : Number,
+        name :String,
+        cvv : Number,
+        year : Number,
         author: {
                 id : {
                         type: mongoose.Schema.Types.ObjectId,
@@ -13,4 +15,4 @@ var commentschema= new mongoose.Schema({
         }  
 });
 
-module.exports = mongoose.model("comment",commentschema);
+module.exports = mongoose.model("payment",paymentschema);

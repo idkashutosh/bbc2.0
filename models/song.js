@@ -6,10 +6,10 @@ var songSchema = new mongoose.Schema({
     url:String,
     cover_image:String,
     artists:String,
-    comments:[
+    payments:[
        {
           type: mongoose.Schema.Types.ObjectId,
-          ref:"comment"
+          ref:"payment"
        } 
     ]
 });

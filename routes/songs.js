@@ -19,7 +19,7 @@ router.get("/",function(req,res){
 //SHOW - show more info about one song
 router.get("/:id",function(req,res){
     //find the song with provided id
-    song.findById(req.params.id).populate("comments").exec(function(err,foundsong){
+    song.findById(req.params.id).populate("payments").exec(function(err,foundsong){
         if(err){
             console.log(err);
         }

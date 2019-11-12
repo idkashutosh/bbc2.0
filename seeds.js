@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var song = require("./models/song");
-var comment    = require("./models/comment");
+var payment   = require("./models/payment");
 
 var data = [ 
         {  

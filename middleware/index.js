@@ -1,5 +1,5 @@
 var song= require("../models/song");
-var comment= require("../models/comment");
+var payment= require("../models/payment");
 //all the middleware
 var middlewareobj={};
 middlewareobj.checksongownership = function(req, res, next){
@@ -27,16 +27,16 @@ middlewareobj.checksongownership = function(req, res, next){
            res.redirect("back");
         }
 }
-middlewareobj.checkcommentownership = function(req, res, next){
+middlewareobj.checkpaymentownership = function(req, res, next){
         //is user logged in
         if(req.isAuthenticated()){
-            comment.findById(req.params.comment_id, function(err, foundcomment){
+            payment.findById(req.params.payment_id, function(err, foundpayment){
                 if(err){
                     res.redirect("back");
                 }
                 else{
                      //does he owns it
-                     if(foundcomment.author.id.equals(req.user._id)){
+                     if(foundpayment.author.id.equals(req.user._id)){
                        next();
                      }
                      else{
