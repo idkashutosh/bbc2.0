@@ -54,7 +54,7 @@ var paymentroutes    = require("./routes/payments"),
     app.use(indexroutes);
     app.use("/songs/:id/payments",paymentroutes);
     app.use("/songs", songroutes);
-    
-    app.listen(3000,function(){
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT,function(){
         console.log("AI SONGS app server has started");
     });
