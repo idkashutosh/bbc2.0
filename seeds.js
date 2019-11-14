@@ -8,13 +8,13 @@ var data = [
            url:"http://hck.re/Rh8KTk",
            artists:"Rahat Fateh Ali Khan, Momina Mustehsan",
            cover_image:"http://hck.re/kWWxUI",
-           price:"75"
+           price:"45"
         },
         {  
          song:"Tajdar e haram",
          url:"http://hck.re/wxlUcX",
          artists:"Atif Aslam",
-         price:"80",
+         price:"50",
          cover_image:"http://hck.re/5dh4D5"
         },
         {  
@@ -22,56 +22,56 @@ var data = [
            song:"Aik Alif",
            url:"http://hck.re/ZeSJFd",
            artists:"Saieen Zahoor, Noori",
-           price:"100",
+           price:"50",
            cover_image:"http://hck.re/3Cm0IX"
         },
         {  
            song:"Aaj Rung",
            url:"http://hck.re/H5nMm3",
            artists:"Amjad Sabri,  Rahat Fateh Ali Khan",
-           price:"90",
+           price:"60",
            cover_image:"http://hck.re/U1bRnt"
         },
         {  
            song:"Ae dil",
            url:"http://hck.re/2nCncK",
            artists:"Ali Zafar, Sara Haider",
-           price:"75",
+           price:"55",
            cover_image:"http://hck.re/eLtjUb"
         },
         {  
            song:"Man Amadeh am",
            url:"http://hck.re/epOzj9",
            artists:"Atif Aslam, Gul Panrra",
-           price:"70",
+           price:"40",
            cover_image:"http://hck.re/KvT2Vv"
         },
         {  
            song:"Bewajah",
            url:"http://hck.re/YkbDDP",
            artists:"Nabeel Shaukat Ali",
-           price:"65",
+           price:"55",
            cover_image:"http://hck.re/N29EEt"
         },
         {  
            song:"Dinae Dinae",
            url:"http://hck.re/dMquYY",
            artists:"Harshadeep Kaur",
-           price:"95",
+           price:"45",
            cover_image:"http://hck.re/6l9QqH"
         },
         {  
            song:"Tera woh pyar",
            url:"http://hck.re/64Tzod",
            artists:"Momina Mustehsan, Asim Azhar",
-           price:"85",
+           price:"55",
            cover_image:"http://hck.re/rlYqJY"
         },
         {  
            song:"Shamaan Pai gaiyan",
            url:"http://hck.re/VhtQGh",
            artists:"Rachel Viccaji, Kashif Ali",
-           price:"74",
+           price:"64",
            cover_image:"http://hck.re/gs0grk"
         }
 ];

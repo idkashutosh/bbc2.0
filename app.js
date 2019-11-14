@@ -16,7 +16,14 @@ var paymentroutes    = require("./routes/payments"),
     songroutes = require("./routes/songs"),
     indexroutes       = require("./routes/index");    
 
-    mongoose.connect("mongodb://localhost/aisongs");    
+    // mongoose.connect("mongodb://localhost/aisongs");  
+    const options={
+        keepAlive: 1,
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    };
+    mongoose.connect("mongodb+srv://ankit:passraj@aimusic-es8pe.mongodb.net/test?retryWrites=true&w=majority",options).then(() =>console.log('DB connected'));
+
     app.use(express.static("public"));
     app.use(methodoverride("_method"));
     app.use(flash());
